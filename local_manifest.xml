@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Pixel-XL -->
+<project path="device/google/marlin" name="cj360/android_device_google_marlin" remote="github" revision="quartz" />
+<project path="kernel/google/marlin" name="cj360/android_kernel_google_marlin" remote="github" revision="ten" />
+<project path="vendor/google" name="cj360/proprietary_vendor_google" remote="github" revision="quartz" />
+
+<project path="vendor/qcom/opensource/audio-hal/primary-hal" name="cj360/android_hardware_qcom_audio" remote="github" revision="quartz-8996" />
+<project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" remote="aosp" />
+<project path="hardware/qcom/display" name="cj360/android_hardware_qcom_display" remote="github" revision="quartz-8996" />
+<project path="hardware/qcom/gps" name="cj360/android_hardware_qcom_gps" remote="github" revision="quartz-8996" />
+<project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" remote="aosp" />
+<project path="hardware/qcom/media" name="cj360/android_hardware_qcom_media" remote="github" revision="quartz-8996" />
+
+<remove-project name="platform/packages/inputmethods/LatinIME" />
+<project path="packages/inputmethods/LatinIME" name="cj360/android_packages_inputmethods_LatinIME" remote="github" revision="ten" />
+
+<!-- Pixel Gapps -->
+<remote name="gapps" fetch="https://gitlab.com/cj360/"  />
+<project path="vendor/pixelgapps" name="android_vendor_pixelgapps" remote="gapps" revision="ten" />
+
+</manifest>
