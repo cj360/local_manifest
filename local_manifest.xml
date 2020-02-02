@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<!-- Pixel-XL -->
+<project path="device/google/marlin" name="LineageOS/android_device_google_marlin" remote="github" revision="lineage-17.1" />
+<project path="kernel/google/marlin" name="LineageOS/android_kernel_google_marlin" remote="github" revision="lineage-17.1" />
+<project path="vendor/google" name="TheMuppets/proprietary_vendor_google" remote="github" revision="lineage-17.1" />
+
+<remove-project name="LineageOS/android_packages_inputmethods_LatinIME" />
+<project path="packages/inputmethods/LatinIME" name="cj360/android_packages_inputmethods_LatinIME" remote="github" revision="ten" />
+
+<!-- Pixel Gapps -->
+<remote name="gapps" fetch="https://gitlab.com/cj360/"  />
+<project path="vendor/pixelgapps" name="android_vendor_pixelgapps" remote="gapps" revision="ten" />
+
+</manifest>
